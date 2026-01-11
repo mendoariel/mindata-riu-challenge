@@ -61,15 +61,6 @@ challenger/
 └── README.md
 ```
 
-## 📚 Documentación
-
-- **[Requisitos del Challenge](./documentation/CHALLENGE_REQUIREMENTS.md)** - Especificaciones y requisitos
-- **[Setup Completo](./documentation/SETUP.md)** - Guía detallada paso a paso
-- **[Resumen del Setup](./documentation/SETUP_SUMMARY.md)** - Checklist y resumen rápido
-- **[Breakpoints Responsive](./documentation/RESPONSIVE_BREAKPOINTS.md)** - Breakpoints y diseño responsive
-- **[Diseño Responsive Detallado](./documentation/RESPONSIVE_DESIGN.md)** - Análisis completo de breakpoints
-- **[Changelog](./documentation/CHANGELOG.md)** - Historial de commits y versiones
-
 ## 🛠️ Stack Tecnológico
 
 - **Angular 21** - Framework con componentes standalone
