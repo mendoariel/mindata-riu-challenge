@@ -51,13 +51,8 @@ challenger/
 │   ├── src/              # Código fuente
 │   ├── Dockerfile        # Configuración Docker
 │   └── postcss.config.js # Configuración Tailwind CSS 4
-├── documentation/        # Documentación completa
-│   ├── images/          # Capturas de pantalla
-│   ├── CHALLENGE_REQUIREMENTS.md
-│   ├── SETUP.md
-│   ├── SETUP_SUMMARY.md
-│   └── CHANGELOG.md
 ├── docker-compose.yml
+├── vercel.json
 └── README.md
 ```
 
@@ -67,7 +62,7 @@ challenger/
 - **Tailwind CSS 4** - Framework CSS utility-first
 - **Docker** - Contenedorización del entorno (opcional)
 - **Node.js 20** - Entorno de ejecución
-- **SCSS** - Preprocesador CSS
+- **CSS** - Estilos globales
 
 ## 📝 Comandos Útiles
 
