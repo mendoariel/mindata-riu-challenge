@@ -1,0 +1,47 @@
+// Estilos específicos del componente search-bar
+
+.search-bar-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* flex-shrink se maneja con Tailwind en el HTML (shrink-0) */
+}
+
+.search-bar-input {
+  width: 100%;
+  height: 40px;
+  background-color: #F4F4F5;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px 0 48px; // padding: top right bottom left (48px left para el icono)
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  outline: none;
+  
+  &::placeholder {
+    color: #6C757D; // Color placeholder típico
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); // Focus ring suave
+  }
+}
+
+.search-bar-icon-container {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-bar-wrapper {
+  margin-bottom: 0; // El margin se maneja en el contenedor padre
+  // Los estilos de flex se manejan con Tailwind en el HTML
+}

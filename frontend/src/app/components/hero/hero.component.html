@@ -1,0 +1,42 @@
+<section class="hero-container w-full py-8 px-5">
+  <div class="hero-inner bg-white rounded-lg shadow-md p-8 md:px-6 lg:max-w-[1542px] lg:mx-auto lg:px-10">
+    <div class="flex flex-col md:flex-row md:gap-6">
+      <!-- Image Section -->
+      <div class="hero-image-container md:flex-1 w-full">
+        @if (image) {
+          <img [src]="image" [alt]="imageAlt || title" class="hero-image w-full rounded-lg" />
+        } @else {
+          <div class="hero-image-placeholder w-full flex items-center justify-center rounded-lg">
+            <span class="hero-image-text">IMAGE</span>
+          </div>
+        }
+      </div>
+
+      <!-- Content Section -->
+      <div class="flex flex-col md:flex-1">
+        <!-- Category with Calendar Icon -->
+        @if (category) {
+          <div class="hero-category mt-[10px] flex items-center justify-start text-left">
+            <img src="/icons/calendar.svg" alt="Calendario" class="hero-category-icon w-4 h-4 mr-2" />
+            <span>{{ category }}</span>
+          </div>
+        }
+
+        <!-- Title -->
+        <h3 class="hero-title mt-2">{{ title }}</h3>
+
+        <!-- Description -->
+        <p class="hero-description mt-4">{{ description }}</p>
+
+        <!-- Button -->
+        @if (buttonText) {
+          <div class="flex justify-end mt-6">
+            <button (click)="buttonAction?.()" class="hero-button px-4 py-2 rounded-lg h-10 cursor-pointer">
+              {{ buttonText }}
+            </button>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

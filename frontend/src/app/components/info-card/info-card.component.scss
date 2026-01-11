@@ -1,0 +1,70 @@
+// Estilos específicos del componente info-card
+
+.info-card-article {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  /* Display, flex-direction, height se manejan con Tailwind en el HTML */
+}
+
+.info-card-image-container {
+  height: 236.25px;
+  background-color: #BDBDBD;
+  overflow: hidden;
+  /* Width, display, align-items, justify-content, border-radius se manejan con Tailwind en el HTML */
+}
+
+.info-card-image {
+  object-fit: cover;
+  /* Width, height, border-radius se manejan con Tailwind en el HTML */
+}
+
+.info-card-image-placeholder {
+  color: #A6A2A2;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.info-card-content {
+  /* Padding se maneja con Tailwind en el HTML (p-1.5) */
+}
+
+.info-card-category {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #343A40;
+  /* Display, align-items, justify-content, text-align, margins se manejan con Tailwind en el HTML */
+}
+
+.info-card-category-icon {
+  /* Width, height, margin-right se manejan con Tailwind en el HTML (w-6 h-6 mr-2) */
+}
+
+.info-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* Text-align y margins se manejan con Tailwind en el HTML */
+}
+
+.info-card-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* Text-align y margins se manejan con Tailwind en el HTML */
+}

@@ -1,0 +1,50 @@
+<section class="mb-12">
+  @if (title) {
+    <h2 class="horizontal-images-title mb-4 text-left">
+      {{ title }}
+    </h2>
+  }
+
+  @if (description) {
+    <p class="horizontal-images-description mb-6 text-left">
+      {{ description }}
+    </p>
+  }
+
+  <div class="horizontal-images-list flex gap-4 overflow-x-auto pb-4">
+    @for (card of cards; track $index) {
+          <article class="horizontal-image-card w-[284px] h-[378px] md:w-[340px] md:h-[480px] lg:w-[361px] lg:h-[482px] shrink-0 rounded-lg overflow-hidden shadow-md relative">
+        <div class="horizontal-image-container w-full h-full absolute top-0 left-0 flex items-center justify-center">
+          @if (card.image) {
+            <img 
+              [src]="card.image" 
+              [alt]="card.imageAlt || card.title"
+              class="horizontal-image w-full h-full"
+            />
+          } @else {
+            <span class="horizontal-image-placeholder">IMAGE</span>
+          }
+        </div>
+        
+        <div class="horizontal-image-content p-4 flex flex-col items-start text-left">
+          <h2 class="horizontal-card-title mb-0 text-left">
+            {{ card.title }}
+          </h2>
+          <p class="horizontal-card-subtitle mt-2 mb-0 text-left">
+            {{ card.subtitle }}
+          </p>
+          @if (card.linkText) {
+            <button
+              (click)="card.linkAction?.()"
+              class="horizontal-card-link flex items-center justify-start p-0 text-left cursor-pointer mt-[27px] lg:mt-[80px]"
+            >
+              {{ card.linkText }}
+              <img src="/icons/download.svg" alt="Descargar" class="horizontal-card-link-icon w-4 h-4 ml-2" aria-hidden="true" role="presentation" />
+            </button>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
+

@@ -1,0 +1,14 @@
+// Estilos específicos del componente challenge
+// Todos los elementos deben alinearse con el mismo padding lateral (20px/px-5)
+// Los padding y margins se manejan con Tailwind en el HTML
+
+.main-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* Margins y padding se manejan con Tailwind en el HTML (mt-8 mb-8 px-5) */
+}

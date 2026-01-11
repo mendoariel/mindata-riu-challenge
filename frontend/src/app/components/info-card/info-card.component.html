@@ -1,0 +1,50 @@
+<article class="info-card-article flex flex-col h-full">
+  <div class="info-card-image-container w-full flex items-center justify-center rounded-lg">
+    @if (data.image) {
+      <img 
+        [src]="data.image" 
+        [alt]="data.imageAlt || data.title"
+        class="info-card-image w-full h-full rounded-lg"
+      />
+    } @else {
+      <span class="info-card-image-placeholder">IMAGE</span>
+    }
+  </div>
+
+  <div class="info-card-content p-1.5">
+    @if (data.category) {
+      <div class="info-card-category mt-3 flex items-center justify-start text-left">
+        @if (data.categoryIcon) {
+          <img 
+            src="/icons/calendar.svg" 
+            alt="" 
+            class="info-card-category-icon w-6 h-6 mr-2"
+            aria-hidden="true"
+            role="presentation"
+          />
+        }
+        <span>{{ data.category }}</span>
+      </div>
+    }
+
+    <h4 class="info-card-title mt-5 text-left">
+      {{ data.title }}
+    </h4>
+
+    <p class="info-card-description mt-5 text-left">
+      {{ data.description }}
+    </p>
+
+    @if (data.buttonText) {
+      <div class="flex justify-end">
+        <button
+          (click)="data.buttonAction?.()"
+          class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium"
+        >
+          {{ data.buttonText }}
+        </button>
+      </div>
+    }
+  </div>
+</article>
+

@@ -1,0 +1,103 @@
+// Hero Component Styles
+.hero-container {
+  background-color: #F4F4F5;
+  /* Padding y width se manejan con Tailwind en el HTML */
+}
+
+.hero-inner {
+  /* Background, border-radius, shadow, padding y max-width se manejan con Tailwind en el HTML */
+}
+
+// Image Container
+.hero-image-container {
+  /* Width se maneja con Tailwind en el HTML */
+}
+
+.hero-image {
+  height: auto;
+  display: block;
+  /* Width y border-radius se manejan con Tailwind en el HTML */
+}
+
+.hero-image-placeholder {
+  background-color: #BDBDBD;
+  aspect-ratio: 16 / 9; // Ajustar según diseño
+  min-height: 200px;
+  overflow: hidden;
+  /* Width, display, align-items, justify-content, border-radius se manejan con Tailwind en el HTML */
+}
+
+.hero-image-text {
+  color: #A6A2A2;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+// Category
+.hero-category {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #343A40;
+  /* Display, align-items, justify-content, text-align se manejan con Tailwind en el HTML */
+}
+
+.hero-category-icon {
+  /* Width, height, margin-right se manejan con Tailwind en el HTML */
+}
+
+// Title
+.hero-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #343A40;
+  /* Margins se manejan con Tailwind en el HTML (mt-2) */
+}
+
+// Description
+.hero-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #343A40;
+  /* Margins se manejan con Tailwind en el HTML (mt-4) */
+}
+
+// Button Container
+.hero-button-container {
+  /* Display, justify-content, margin-top se manejan con Tailwind en el HTML */
+}
+
+.hero-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #E4002B;
+  border: none;
+  width: auto;
+  transition: background-color 0.2s ease;
+  /* Padding, border-radius, height, cursor se manejan con Tailwind en el HTML */
+
+  &:hover {
+    background-color: #C40024;
+  }
+
+  &:active {
+    background-color: #A4001D;
+  }
+}

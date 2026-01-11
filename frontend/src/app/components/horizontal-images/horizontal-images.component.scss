@@ -1,0 +1,114 @@
+// Estilos específicos del componente horizontal-images
+
+.horizontal-images-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* Margin-bottom y text-align se manejan con Tailwind en el HTML */
+}
+
+.horizontal-images-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #000000;
+  /* Margin-bottom y text-align se manejan con Tailwind en el HTML */
+}
+
+.horizontal-images-list {
+  // Ocultar scrollbar pero mantener funcionalidad de scroll
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Display, gap, overflow-x, padding-bottom se manejan con Tailwind en el HTML */
+}
+
+.horizontal-image-card {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* flex-shrink, border-radius, overflow, position, tamaños se manejan con Tailwind en el HTML */
+}
+
+.horizontal-image-container {
+  background-color: #BDBDBD;
+  /* Width, height, position, display, align-items, justify-content se manejan con Tailwind en el HTML */
+}
+
+.horizontal-image {
+  object-fit: cover;
+  /* Width, height se manejan con Tailwind en el HTML */
+}
+
+.horizontal-image-placeholder {
+  color: #A6A2A2;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.horizontal-image-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #FFFFFF;
+  /* Padding, display, flex-direction, align-items, text-align se manejan con Tailwind en el HTML */
+}
+
+.horizontal-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  /* Margin-bottom y text-align se manejan con Tailwind en el HTML */
+}
+
+.horizontal-card-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  /* Margins y text-align se manejan con Tailwind en el HTML */
+}
+
+.horizontal-card-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  transition: color 0.2s ease;
+  /* Display, align-items, justify-content, padding, margin-top, text-align, cursor se manejan con Tailwind en el HTML */
+  
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.horizontal-card-link-icon {
+  /* Width, height, margin-left se manejan con Tailwind en el HTML (w-4 h-4 ml-2) */
+}
+
