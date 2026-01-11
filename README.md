@@ -119,7 +119,7 @@ npm run build
 
 ## 🔗 Enlaces
 
+- [Proyecto Desplegado en Vercel](https://mindata-riu-challenge.vercel.app/) - Versión en producción
 - [Diseño Figma](https://www.figma.com/design/oXuQAestvw8eMPnUixWZiq/Challenge-RIU?node-id=9-637&t=6xmNIChbD3PRG8bL-1)
 - [Documentación Angular](https://angular.dev)
 - [Documentación Tailwind CSS 4](https://tailwindcss.com/docs)
-- [Proceso de Desarrollo](./proceso-de-desarrollo-challenge-riu) - Página interna del proyecto
