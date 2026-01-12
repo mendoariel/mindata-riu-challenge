@@ -1,6 +1,6 @@
 <div class="search-bar-wrapper flex flex-col md:flex-row md:items-center md:justify-between gap-4">
   @if (label) {
-    <label class="search-bar-label shrink-0">
+    <label for="search-input" class="search-bar-label shrink-0">
       {{ label }}
     </label>
   }
@@ -9,6 +9,7 @@
       <img src="/icons/search.svg" alt="" class="h-5 w-5" />
     </div>
     <input
+      id="search-input"
       type="text"
       [(ngModel)]="searchValue"
       (input)="onInputChange()"

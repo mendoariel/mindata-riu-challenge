@@ -27,20 +27,32 @@
         </div>
         
         <div class="horizontal-image-content p-4 flex flex-col items-start text-left">
-          <h2 class="horizontal-card-title mb-0 text-left">
+          <h3 class="horizontal-card-title mb-0 text-left">
             {{ card.title }}
-          </h2>
+          </h3>
           <p class="horizontal-card-subtitle mt-2 mb-0 text-left">
             {{ card.subtitle }}
           </p>
           @if (card.linkText) {
-            <button
-              (click)="card.linkAction?.()"
-              class="horizontal-card-link flex items-center justify-start p-0 text-left cursor-pointer mt-[27px] lg:mt-[80px]"
-            >
-              {{ card.linkText }}
-              <img src="/icons/download.svg" alt="" class="horizontal-card-link-icon w-4 h-4 ml-2" />
-            </button>
+            @if (card.linkUrl) {
+              <a
+                [href]="card.linkUrl"
+                [target]="card.linkTarget || '_self'"
+                [rel]="card.linkTarget === '_blank' ? 'noopener noreferrer' : undefined"
+                class="horizontal-card-link flex items-center justify-start p-0 text-left cursor-pointer mt-[27px] lg:mt-[80px]"
+              >
+                {{ card.linkText }}
+                <img src="/icons/download.svg" alt="" class="horizontal-card-link-icon w-4 h-4 ml-2" />
+              </a>
+            } @else {
+              <button
+                (click)="card.linkAction?.()"
+                class="horizontal-card-link flex items-center justify-start p-0 text-left cursor-pointer mt-[27px] lg:mt-[80px]"
+              >
+                {{ card.linkText }}
+                <img src="/icons/download.svg" alt="" class="horizontal-card-link-icon w-4 h-4 ml-2" />
+              </button>
+            }
           }
         </div>
       </article>

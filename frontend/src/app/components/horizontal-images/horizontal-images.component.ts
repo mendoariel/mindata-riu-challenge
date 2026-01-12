@@ -7,6 +7,8 @@ export interface HorizontalImageCard {
   title: string;
   subtitle: string;
   linkText?: string;
+  linkUrl?: string;
+  linkTarget?: '_self' | '_blank';
   linkAction?: () => void;
 }
 
